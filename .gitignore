@@ -1,0 +1,23 @@
+# build output
+dist
+.output
+.out
+
+# dependencies
+node_modules
+yarn.lock
+
+# logs
+*.log
+
+# coverage
+.nyc_output
+coverage
+
+# test output
+test/**/out
+.DS_Store
+.csslintrc
+
+#editors
+.idea

@@ -1,0 +1,30 @@
+{
+  "name": "@devinit/dh-css",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devinit/dh-css"
+  },
+  "author": "epicallan.al@gmail.com",
+  "license": "ISC",
+  "scripts": {
+    "lessToJs": "npm run build-tools && node dist/lessToJs/index.js",
+    "patch": "release-it --no-npm.publish -i patch -n",
+    "feature": "release-it --no-npm.publish -i minor -n",
+    "breaking": "release-it --no-npm.publish -i major -n",
+    "flow": "flow",
+    "build": "gulp  --gulpfile ./semantic/gulpfile.js",
+    "build:watch": "gulp watch --gulpfile ./private/semantic/gulpfile.js"
+  },
+  "dependencies": {
+    "semantic-ui": "^2.2.13"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "less": "^2.7.2",
+    "release-it": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=8.5"
+  }
+}
